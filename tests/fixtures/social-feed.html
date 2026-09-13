@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SocialShield mock feed</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 24px auto; }
+      article {
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin: 12px 0;
+        background: white;
+      }
+      .caption { margin: 0; }
+      .author { font-weight: 600; margin: 0 0 4px; }
+      img { max-width: 240px; display: block; margin-top: 8px; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <h1>SocialShield mock feed</h1>
+    <p>Deterministic DOM used by the integration test. Each &lt;article&gt; is a candidate post.</p>
+
+    <!-- Post A: identity only, no context, no image -->
+    <article role="article" data-fixture="A">
+      <p class="author">User1</p>
+      <p class="caption">Rashed Khan announced a new project.</p>
+    </article>
+
+    <!-- Post B: same-name different person, no target context, no image -->
+    <article role="article" data-fixture="B">
+      <p class="author">MovieBuff</p>
+      <p class="caption">Another Rashed Khan appeared in a movie.</p>
+    </article>
+
+    <!-- Post C: unrelated person -->
+    <article role="article" data-fixture="C">
+      <p class="author">User3</p>
+      <p class="caption">John Smith announced something.</p>
+    </article>
+
+    <!-- Post D: identity + reference image (image src is a data: URL swapped in by the test) -->
+    <article role="article" data-fixture="D">
+      <p class="author">News</p>
+      <p class="caption">Rashed Khan spotted at the rally.</p>
+      <img data-role="post-image" alt="event photo" />
+    </article>
+
+    <!-- Post E: identity + different image -->
+    <article role="article" data-fixture="E">
+      <p class="author">News</p>
+      <p class="caption">Rashed Khan the cricketer bowled a maiden.</p>
+      <img data-role="post-image" alt="cricket photo" />
+    </article>
+
+    <!-- Post F: image whose alt text carries the identity string (proxy for OCR result) -->
+    <article role="article" data-fixture="F">
+      <p class="author">Photog</p>
+      <p class="caption">Photo dump from today.</p>
+      <img data-role="post-image" alt="Rashed Khan on stage" />
+    </article>
+
+    <!-- Post G: identity + context keyword (politician) -->
+    <article role="article" data-fixture="G">
+      <p class="author">Bulletin</p>
+      <p class="caption">Rashed Khan, the politician, addressed the crowd.</p>
+    </article>
+
+    <!-- Post H: context only -->
+    <article role="article" data-fixture="H">
+      <p class="author">Bulletin</p>
+      <p class="caption">Bangladesh's economy grew last quarter.</p>
+    </article>
+  </body>
+</html>

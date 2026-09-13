@@ -1,0 +1,234 @@
+- generic [ref=f24e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - banner:
+            - generic [ref=f24e2]:
+              - generic:
+                - generic:
+                  - button [disabled] [aria-hidden]
+              - link "Facebook" [ref=f24e3] [cursor=pointer]:
+                - /url: /
+            - generic [ref=f24e12]:
+              - generic [ref=f24e13]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button [aria-hidden]
+              - combobox "Search Facebook" [ref=f24e16] [cursor=pointer]
+            - navigation "Facebook" [ref=f24e20]:
+              - list [ref=f24e21]:
+                - listitem [ref=f24e22]:
+                  - link "Home" [ref=f24e25] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f24e29]:
+                  - link "Reels" [ref=f24e32] [cursor=pointer]:
+                    - /url: /reel/?s=tab
+                - listitem [ref=f24e37]:
+                  - link "Marketplace" [ref=f24e40] [cursor=pointer]:
+                    - /url: /marketplace/?ref=app_tab
+                - listitem [ref=f24e44]:
+                  - link "Groups" [ref=f24e47] [cursor=pointer]:
+                    - /url: /groups/
+                - listitem [ref=f24e51]:
+                  - link "Gaming" [ref=f24e54] [cursor=pointer]:
+                    - /url: /gaming/play/?store_visit_source=gaming_tab
+            - navigation "Account Controls and Settings" [ref=f24e60]:
+              - button "Facebook menu" [ref=f24e65] [cursor=pointer]
+              - button "Messenger" [ref=f24e72] [cursor=pointer]
+              - button "Notifications" [ref=f24e79] [cursor=pointer]
+              - button "Your profile" [ref=f24e84] [cursor=pointer]:
+                - img "Your profile" [ref=f24e86]
+          - generic [ref=f24e100]:
+            - navigation [ref=f24e101]:
+              - generic [ref=f24e102]:
+                - heading [level=1] [ref=f24e110]: Feeds
+                - generic [ref=f24e114]:
+                  - link [ref=f24e117] [cursor=pointer]:
+                    - /url: /?filter=all&sk=h_chr
+                    - generic [ref=f24e118]: All
+                  - link [ref=f24e134] [cursor=pointer]:
+                    - /url: /?filter=favorites&sk=h_chr
+                    - generic [ref=f24e135]: Favorites
+                  - link [ref=f24e150] [cursor=pointer]:
+                    - /url: /?filter=friends&sk=h_chr
+                    - generic [ref=f24e151]: Friends
+                  - link [ref=f24e166] [cursor=pointer]:
+                    - /url: /?filter=groups&sk=h_chr
+                    - generic [ref=f24e167]: Groups
+                  - link [ref=f24e181] [cursor=pointer]:
+                    - /url: /?filter=pages&sk=h_chr
+                    - generic [ref=f24e182]: Pages
+            - main [ref=f24e196]:
+              - main [ref=f24e198]:
+                - generic [ref=f24e200]:
+                  - link:
+                    - /url: /?sk=h_chr&should_open_composer=false&wp_discovery_redirect=true
+                  - generic [ref=f24e204]:
+                    - heading [level=2] [ref=f24e205]: Feed posts
+                    - generic [ref=f24e206]:
+                      - generic [ref=f24e222]:
+                        - blockquote [ref=f24e224]:
+                          - generic [ref=f24e225]: Facebook
+                        - blockquote [ref=f24e227]:
+                          - generic [ref=f24e228]: Facebook
+                        - blockquote [ref=f24e230]:
+                          - generic [ref=f24e231]: Facebook
+                        - blockquote [ref=f24e233]:
+                          - generic [ref=f24e234]: Facebook
+                        - blockquote [ref=f24e236]:
+                          - generic [ref=f24e237]: Facebook
+                        - blockquote [ref=f24e239]:
+                          - generic [ref=f24e240]: Facebook
+                        - blockquote [ref=f24e242]:
+                          - generic [ref=f24e243]: Facebook
+                        - blockquote [ref=f24e245]:
+                          - generic [ref=f24e246]: Facebook
+                        - blockquote [ref=f24e248]:
+                          - generic [ref=f24e249]: Facebook
+                        - blockquote [ref=f24e251]:
+                          - generic [ref=f24e252]: Facebook
+                        - blockquote [ref=f24e254]:
+                          - generic [ref=f24e255]: Facebook
+                        - generic [ref=f24e258]:
+                          - blockquote [ref=f24e260]:
+                            - generic [ref=f24e261]: Facebook
+                          - blockquote [ref=f24e263]:
+                            - generic [ref=f24e264]: Facebook
+                          - blockquote [ref=f24e266]:
+                            - generic [ref=f24e267]: Facebook
+                          - blockquote [ref=f24e269]:
+                            - generic [ref=f24e270]: Facebook
+                          - blockquote [ref=f24e272]:
+                            - generic [ref=f24e273]: Facebook
+                          - blockquote [ref=f24e275]:
+                            - generic [ref=f24e276]: Facebook
+                          - blockquote [ref=f24e278]:
+                            - generic [ref=f24e279]: Facebook
+                          - blockquote [ref=f24e281]:
+                            - generic [ref=f24e282]: Facebook
+                          - blockquote [ref=f24e284]:
+                            - generic [ref=f24e285]: Facebook
+                          - blockquote [ref=f24e287]:
+                            - generic [ref=f24e288]: Facebook
+                          - blockquote [ref=f24e290]:
+                            - generic [ref=f24e291]: Facebook
+                          - blockquote [ref=f24e293]:
+                            - generic [ref=f24e294]: Facebook
+                          - blockquote [ref=f24e296]:
+                            - generic [ref=f24e297]: Facebook
+                          - blockquote [ref=f24e299]:
+                            - generic [ref=f24e300]: Facebook
+                          - blockquote [ref=f24e302]:
+                            - generic [ref=f24e303]: Facebook
+                          - blockquote [ref=f24e305]:
+                            - generic [ref=f24e306]: Facebook
+                          - blockquote [ref=f24e308]:
+                            - generic [ref=f24e309]: Facebook
+                          - blockquote [ref=f24e311]:
+                            - generic [ref=f24e312]: Facebook
+                          - blockquote [ref=f24e314]:
+                            - generic [ref=f24e315]: Facebook
+                          - blockquote [ref=f24e317]:
+                            - generic [ref=f24e318]: Facebook
+                          - blockquote [ref=f24e320]:
+                            - generic [ref=f24e321]: Facebook
+                          - blockquote [ref=f24e323]:
+                            - generic [ref=f24e324]: Facebook
+                          - generic [ref=f24e326]:
+                            - link [ref=f24e330] [cursor=pointer]:
+                              - /url: https://www.facebook.com/mamuna.moha.ila?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=%3C%3C%2CP-R
+                              - generic [ref=f24e337]:
+                                - generic [ref=f24e338]: Online status indicator
+                                - generic [ref=f24e341]: Active
+                            - generic [ref=f24e343]:
+                              - heading [level=3] [ref=f24e347]:
+                                - link [ref=f24e353] [cursor=pointer]:
+                                  - /url: https://www.facebook.com/mamuna.moha.ila?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=-UC%2CP-R
+                                  - generic [ref=f24e354]: মামুন মোহাইল
+                              - generic [ref=f24e357]:
+                                - link [ref=f24e361] [cursor=pointer]:
+                                  - /url: "?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=%2CO%2CP-R#?fgg"
+                                - generic [ref=f24e365]: ·
+                            - button [ref=f24e376] [cursor=pointer]
+                            - link [ref=f24e382] [cursor=pointer]:
+                              - /url: "#"
+                          - generic [ref=f24e388]:
+                            - link [ref=f24e391] [cursor=pointer]:
+                              - /url: https://www.facebook.com/photo/?fbid=122275133156171873&set=a.122094054530171873&__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=EH-y-R
+                            - generic [ref=f24e398]:
+                              - link [ref=f24e402] [cursor=pointer]:
+                                - /url: /stories/122094030224171873/UzpfSVNDOjEzOTkzMDQyMjgzOTE2NTU=/?view_single=false&__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=%3C%3C%2CP-y-R
+                              - generic [ref=f24e409]:
+                                - heading [level=4] [ref=f24e413]:
+                                  - generic [ref=f24e416]:
+                                    - link [ref=f24e422] [cursor=pointer]:
+                                      - /url: https://www.facebook.com/md.imran.morol.954776?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=-]C%2CP-y-R
+                                      - text: Imran Bhai
+                                    - text: is at
+                                    - link [ref=f24e425] [cursor=pointer]:
+                                      - /url: https://www.facebook.com/Asia-112599518755224/?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=kC%2CP-y-R
+                                      - generic [ref=f24e426]: Asia
+                                    - text: .
+                                - generic [ref=f24e430]:
+                                  - link [ref=f24e434] [cursor=pointer]:
+                                    - /url: "?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=%2CO%2CP-y-R#?jhj"
+                                  - generic [ref=f24e438]: ·
+                            - generic [ref=f24e459]:
+                              - text: আলহামদুলিল্লাহ আপনারা পোস্টটি দেখে অবশ্যই একবার শেয়ার করে দিবেন এই আব্বারটা আমাদের জন্য একটু রাখবেন ভাই আপুর ও মুরুব্বীগণ
+                              - link [ref=f24e461] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/viral?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#viral"
+                              - link [ref=f24e463] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/photography?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#photography"
+                              - link [ref=f24e465] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/fbreels?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#fbreels"
+                              - link [ref=f24e467] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/foryou%E3%82%B7?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#foryouシ"
+                              - link [ref=f24e469] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/fyp?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#fyp"
+                              - link [ref=f24e471] [cursor=pointer]:
+                                - /url: https://www.facebook.com/hashtag/fyp%E3%82%B7?__cft__[0]=AZi7IJ4VPBjmNPjDuD4x6MgMtdCk4r8umF2XJM-JmSzbDpbxpF00I09455BMYoUnJ0rZ4PJxURz9VEp_Eju4RBoopJGWLTocQkwZnBB2_iaNzpasBgh7yGkd9OvT2Zz5Ps9Yi523U7JtlhDWNHrzgAyvfiA7487sh4BJWaSxE83T07O0MC6Vyze1rJtFNL0KUfVsHMo0-Z6X0kccdkwyyAqiOw&__tn__=*NK-y-R
+                                - text: "#fypシ"
+                          - generic [ref=f24e478]:
+                            - generic [ref=f24e479]:
+                              - button [ref=f24e480] [cursor=pointer]
+                              - button [ref=f24e485] [cursor=pointer]
+                            - button [ref=f24e489] [cursor=pointer]
+                            - button [ref=f24e494] [cursor=pointer]
+                        - blockquote [ref=f24e500]:
+                          - generic [ref=f24e501]: Facebook
+                        - blockquote [ref=f24e503]:
+                          - generic [ref=f24e504]: Facebook
+                        - blockquote [ref=f24e506]:
+                          - generic [ref=f24e507]: Facebook
+                        - blockquote [ref=f24e509]:
+                          - generic [ref=f24e510]: Facebook
+                        - blockquote [ref=f24e512]:
+                          - generic [ref=f24e513]: Facebook
+                        - blockquote [ref=f24e515]:
+                          - generic [ref=f24e516]: Facebook
+                        - blockquote [ref=f24e518]:
+                          - generic [ref=f24e519]: Facebook
+                        - blockquote [ref=f24e521]:
+                          - generic [ref=f24e522]: Facebook
+                        - blockquote [ref=f24e524]:
+                          - generic [ref=f24e525]: Facebook
+                        - blockquote [ref=f24e527]:
+                          - generic [ref=f24e528]: Facebook
+                        - blockquote [ref=f24e530]:
+                          - generic [ref=f24e531]: Facebook
+                      - generic [ref=f24e533]:
+                        - article [ref=f24e534]:
+                          - status [ref=f24e535]
+                        - article [ref=f24e548]:
+                          - status [ref=f24e549]
+          - button "New message" [ref=f24e564] [cursor=pointer]
+  - alertdialog "Push notifications request" [ref=f24e573]:
+    - generic [ref=f24e574]: To allow or block browser notifications from Facebook, go to your browser settings.
+    - button "Close" [active] [ref=f24e575]

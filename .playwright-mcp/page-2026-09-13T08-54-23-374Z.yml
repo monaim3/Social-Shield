@@ -1,0 +1,147 @@
+- generic [ref=f8e5]:
+  - banner:
+    - generic [ref=f8e8]:
+      - generic [ref=f8e10]:
+        - generic [aria-hidden]:
+          - button [disabled]
+        - button "Facebook" [ref=f8e12] [cursor=pointer]:
+          - img "Facebook" [ref=f8e13]
+      - generic [ref=f8e18]:
+        - textbox "Email or phone" [ref=f8e21]
+        - textbox "Password" [ref=f8e24]
+        - button "Log in" [ref=f8e27] [cursor=pointer]
+        - link "Forgotten account?" [ref=f8e34] [cursor=pointer]:
+          - /url: https://www.facebook.com/recover/initiate?ars=royal_blue_bar
+  - main [ref=f8e41]:
+    - generic [ref=f8e42]:
+      - link [ref=f8e53] [cursor=pointer]:
+        - /url: https://www.facebook.com/photo/?fbid=483795443784453&set=a.334266855403980
+      - generic [ref=f8e61]:
+        - link [ref=f8e64] [cursor=pointer]:
+          - /url: https://www.facebook.com/photo/?fbid=365983172232348&set=a.334266865403979&__tn__=%3C
+        - generic [ref=f8e72]:
+          - heading [level=1] [ref=f8e77]: BBC News
+          - generic [ref=f8e86]:
+            - link [ref=f8e87] [cursor=pointer]:
+              - /url: https://www.facebook.com/bbcnews/followers/
+              - strong [ref=f8e88]: 62M
+              - text: followers
+            - text: •
+            - link [ref=f8e89] [cursor=pointer]:
+              - /url: https://www.facebook.com/bbcnews/following/
+              - strong [ref=f8e90]: "49"
+              - text: following
+    - generic [ref=f8e98]:
+      - tablist [ref=f8e106]:
+        - generic [ref=f8e108]:
+          - generic [ref=f8e109]: More
+          - tab [disabled] [selected] [aria-hidden] [ref=f8e115] [cursor=pointer]:
+            - generic [ref=f8e116]: Posts
+          - tab [disabled] [aria-hidden] [ref=f8e119] [cursor=pointer]:
+            - generic [ref=f8e120]: About
+          - tab [disabled] [aria-hidden] [ref=f8e123] [cursor=pointer]:
+            - generic [ref=f8e124]: Reels
+          - tab [disabled] [aria-hidden] [ref=f8e127] [cursor=pointer]:
+            - generic [ref=f8e128]: Photos
+      - button [ref=f8e133] [cursor=pointer]
+    - generic [ref=f8e142]:
+      - generic [ref=f8e145]:
+        - generic [ref=f8e149]:
+          - heading [level=2] [ref=f8e158]:
+            - generic [ref=f8e159]: Intro
+          - generic [ref=f8e161]:
+            - generic [ref=f8e162]: BBC News is recognised by audiences around the world as a provider of news that you can trust.
+            - list [ref=f8e168]:
+              - button [ref=f8e176] [cursor=pointer]:
+                - generic [ref=f8e177]:
+                  - strong [ref=f8e178]: Page
+                  - text: · Media/news company
+              - generic [ref=f8e182]:
+                - generic [ref=f8e183]: British Broadcasting Corporation
+                - generic [ref=f8e185]: is responsible for this Page
+              - button [ref=f8e190] [cursor=pointer]:
+                - generic [ref=f8e191]: BBC Broadcasting House, London, United Kingdom
+              - generic [ref=f8e192]: yourvoice@bbc.co.uk
+              - link [ref=f8e202] [cursor=pointer]:
+                - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bbc.co.uk%2Fnews&h=AUAEUMrW1_LzRviP6GNdi7m_WR5D8k8-Ef6Hp8qgprd4RY1lRgxMI5jFm8lY8yKy57NZ0z7T4pF09ukRWi1-m5Qv2eIUQSEv2k4Lpzzrx0kYhqrEBZso3CzH-UACcAxUqD2_m1LOt2-UtdBgqX3jUQ
+                - generic [ref=f8e203]: bbc.co.uk/news
+              - button [ref=f8e209] [cursor=pointer]:
+                - generic [ref=f8e210]: Always open
+        - generic [ref=f8e218]:
+          - generic [ref=f8e225]:
+            - heading [level=2] [ref=f8e227]:
+              - link [ref=f8e230] [cursor=pointer]:
+                - /url: https://www.facebook.com/bbcnews/photos
+                - text: Photos
+            - link [ref=f8e235] [cursor=pointer]:
+              - /url: https://www.facebook.com/bbcnews/photos
+              - generic [ref=f8e236]: See All Photos
+          - generic [ref=f8e240]:
+            - link [aria-hidden] [ref=f8e243] [cursor=pointer]:
+              - /url: /photo/?fbid=1591372873026699&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e248] [cursor=pointer]:
+              - /url: /photo/?fbid=1591001389730514&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e253] [cursor=pointer]:
+              - /url: /photo/?fbid=1590915426405777&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e258] [cursor=pointer]:
+              - /url: /photo/?fbid=1590758873088099&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e263] [cursor=pointer]:
+              - /url: /photo/?fbid=1590686466428673&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e268] [cursor=pointer]:
+              - /url: /photo/?fbid=1590641959766457&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e273] [cursor=pointer]:
+              - /url: /photo/?fbid=1590604253103561&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e278] [cursor=pointer]:
+              - /url: /photo/?fbid=1590539379776715&set=pb.100064620046507.-2207520000
+            - link [aria-hidden] [ref=f8e283] [cursor=pointer]:
+              - /url: /photo/?fbid=1590168269813826&set=pb.100064620046507.-2207520000
+        - contentinfo [ref=f8e286]:
+          - list [ref=f8e288]:
+            - listitem [ref=f8e289]:
+              - link [ref=f8e290] [cursor=pointer]:
+                - /url: /privacy/policy/?entry_point=comet_dropdown
+                - text: Privacy
+              - generic [ref=f8e291]: ·
+            - listitem [ref=f8e293]:
+              - link [ref=f8e294] [cursor=pointer]:
+                - /url: /policies?ref=pf
+                - text: Terms
+              - generic [ref=f8e295]: ·
+            - listitem [ref=f8e297]:
+              - link [ref=f8e298] [cursor=pointer]:
+                - /url: /business/
+                - text: Advertising
+              - generic [ref=f8e299]: ·
+            - listitem [ref=f8e301]:
+              - link [ref=f8e302] [cursor=pointer]:
+                - /url: /help/568137493302217
+                - text: Ad choices
+              - generic [ref=f8e307]: ·
+            - listitem [ref=f8e309]:
+              - link [ref=f8e310] [cursor=pointer]:
+                - /url: /policies/cookies/
+                - text: Cookies
+              - generic [ref=f8e311]: ·
+            - listitem [ref=f8e313]:
+              - button [ref=f8e314] [cursor=pointer]: More
+      - generic [ref=f8e318]:
+        - article [ref=f8e319]:
+          - status [ref=f8e320]
+        - article [ref=f8e332]:
+          - status [ref=f8e333]
+  - dialog [ref=f8e353]:
+    - button "Close" [ref=f8e355] [cursor=pointer]
+    - generic [ref=f8e362]:
+      - generic [ref=f8e372]: See more from BBC News | London
+      - generic [ref=f8e379]:
+        - generic: Email address or phone number
+        - textbox "Email address or phone number" [active] [ref=f8e380]
+      - generic [ref=f8e385]:
+        - generic: Password
+        - textbox "Password" [ref=f8e386]
+      - button "Log in to Facebook" [ref=f8e388] [cursor=pointer]:
+        - generic [ref=f8e389]: Log in
+      - link "Forgotten password?" [ref=f8e393] [cursor=pointer]:
+        - /url: https://www.facebook.com/recover/initiate?ars=royal_blue_bar
+      - generic [ref=f8e395]: or
+      - button "Create new account" [ref=f8e404] [cursor=pointer]
