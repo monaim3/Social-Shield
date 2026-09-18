@@ -1,7 +1,7 @@
 import type { BlockProfile } from "@shared/types/profile";
 import type { MatchHit } from "@shared/types/match";
 import { SCORE_WEIGHTS } from "@shared/constants";
-import { normalize, wordBoundaryRegex } from "@shared/utils/normalize";
+import { nameVariants, normalize, stripBanglaVariations, wordBoundaryRegex } from "@shared/utils/normalize";
 
 export interface TextMatchInput {
   normalized: string;
@@ -74,14 +74,30 @@ export function matchProfileText(
   ];
 }
 
+/**
+ * Word-boundary match that also handles:
+ *  - Bangla চন্দ্রবিন্দু / অনুস্বার variants ("খান" ≡ "খাঁন")
+ *  - Hashtag / no-space variants ("Rashed Khan" catches "#RashedKhan")
+ * Tests each variant against both the strict-normalized haystack and its
+ * diacritic-stripped form.
+ */
 function containsAsWord(haystackNorm: string, needle: string): boolean {
-  const n = normalize(needle);
-  if (!n) return false;
-  return wordBoundaryRegex(n).test(haystackNorm);
+  const variants = nameVariants(needle);
+  if (!variants.length) return false;
+  const strippedHay = stripBanglaVariations(haystackNorm);
+  for (const v of variants) {
+    const re = wordBoundaryRegex(v);
+    if (re.test(haystackNorm)) return true;
+    if (strippedHay !== haystackNorm && re.test(strippedHay)) return true;
+  }
+  return false;
 }
 
 function containsSubstring(haystackNorm: string, needle: string): boolean {
   const n = normalize(needle);
   if (!n) return false;
-  return haystackNorm.includes(n);
+  if (haystackNorm.includes(n)) return true;
+  const stripped = stripBanglaVariations(n);
+  if (stripped !== n && stripBanglaVariations(haystackNorm).includes(stripped)) return true;
+  return false;
 }

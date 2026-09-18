@@ -10,15 +10,16 @@ export default function ReferenceImageManager({ profile }: Props) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [progress, setProgress] = useState<string | null>(null);
+  const [lastToast, setLastToast] = useState<string | null>(null);
   const [dragOver, setDragOver] = useState(false);
+  const [expandMultiFace, setExpandMultiFace] = useState(true);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const wantFaces = profile.settings.faceMatching;
 
   async function handleFiles(files: FileList | File[] | null) {
     if (!files || (files as FileList).length === 0) return;
     setBusy(true);
     setError(null);
+    setLastToast(null);
     try {
       const list = Array.from(files as ArrayLike<File>).filter((f) =>
         f.type.startsWith("image/"),
@@ -27,12 +28,18 @@ export default function ReferenceImageManager({ profile }: Props) {
         setError("No image files detected.");
         return;
       }
+      let totalFaces = 0;
+      let totalExtras = 0;
       for (let i = 0; i < list.length; i++) {
-        setProgress(
-          `Processing ${i + 1}/${list.length}${wantFaces ? " (detecting face…)" : ""}`,
-        );
-        await addReferenceImageFile(profile.id, list[i], { computeFace: wantFaces });
+        setProgress(`Processing ${i + 1}/${list.length} (hashing + face detect…)`);
+        const res = await addReferenceImageFile(profile.id, list[i], { expandMultiFace });
+        totalFaces += res.faceCount;
+        totalExtras += res.extras.length;
       }
+      const parts = [`${list.length} image${list.length === 1 ? "" : "s"} added`];
+      if (totalFaces > 0) parts.push(`${totalFaces} face${totalFaces === 1 ? "" : "s"} detected`);
+      if (totalExtras > 0) parts.push(`+${totalExtras} extra face reference${totalExtras === 1 ? "" : "s"}`);
+      setLastToast(parts.join(" · "));
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -106,11 +113,30 @@ export default function ReferenceImageManager({ profile }: Props) {
 
       {error && <div className="text-xs text-red-600">{error}</div>}
       {progress && <div className="text-xs text-slate-500">{progress}</div>}
-      {wantFaces && (
-        <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded px-2 py-1">
-          Face embedding will be computed on upload. First upload loads ~6.5 MB of local face models.
+      {lastToast && (
+        <div className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-2 py-1">
+          {lastToast}
         </div>
       )}
+      <label className="flex items-start gap-2 text-[11px] text-slate-600 bg-slate-50 border border-slate-200 rounded p-2">
+        <input
+          type="checkbox"
+          checked={expandMultiFace}
+          onChange={(e) => setExpandMultiFace(e.target.checked)}
+          className="mt-0.5"
+        />
+        <span>
+          <b>Auto-extract every face</b> from group photos. One interview / panel
+          screenshot becomes N face references (one per person visible), each
+          with its own cropped thumbnail.
+        </span>
+      </label>
+      <div className="text-[11px] text-slate-500 leading-snug">
+        Face descriptor is extracted on upload (~6.5 MB models load on first
+        image, then cached). The <b>face</b> badge below means a face was
+        detected and stored. Flip on <b>Face similarity</b> in Matching sources
+        above to use it — no re-upload needed.
+      </div>
 
       {profile.referenceImages.length === 0 ? (
         <button

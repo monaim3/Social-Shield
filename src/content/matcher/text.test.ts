@@ -48,6 +48,23 @@ describe("matchIdentityText", () => {
     const hits = matchIdentityText(profile({ name: "Trump" }), prepareText("trumpet lesson"));
     expect(hits.length).toBe(0);
   });
+
+  it("catches hashtag concatenation (#RashedKhan)", () => {
+    const hits = matchIdentityText(profile({}), prepareText("Update from #RashedKhan today"));
+    expect(hits.some((h) => h.reason === "name")).toBe(true);
+  });
+
+  it("catches Bangla chandrabindu variant (খাঁন vs খান)", () => {
+    const p = profile({ name: "রাশেদ খান", aliases: [] });
+    const hits = matchIdentityText(p, prepareText("আজ রাশেদ খাঁন বললেন"));
+    expect(hits.some((h) => h.reason === "name")).toBe(true);
+  });
+
+  it("catches reverse: needle has chandrabindu, hay doesn't", () => {
+    const p = profile({ name: "রাশেদ খাঁন", aliases: [] });
+    const hits = matchIdentityText(p, prepareText("রাশেদ খান আজ বললেন"));
+    expect(hits.some((h) => h.reason === "name")).toBe(true);
+  });
 });
 
 describe("matchContextText", () => {

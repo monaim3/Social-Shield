@@ -1,0 +1,165 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: BD
+        - button "Skip navigation" [ref=e20] [cursor=pointer]
+      - generic [ref=e24]:
+        - search [ref=e25]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - combobox "Search" [expanded] [ref=e30]: rashed khan
+              - button "Clear search query" [ref=e32] [cursor=pointer]
+            - button "Search" [ref=e37] [cursor=pointer]
+        - generic [ref=e40]:
+          - button "Search with your voice" [ref=e42] [cursor=pointer]
+          - tooltip "tooltip"
+  - navigation [ref=e51]
+  - main [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e58]:
+        - button "Search filters" [ref=e60] [cursor=pointer]:
+          - generic: Filters
+        - tooltip "tooltip"
+      - generic [ref=e69]:
+        - generic [ref=e71]:
+          - link [aria-hidden] [ref=e73] [cursor=pointer]:
+            - /url: /watch?v=g0nPG2G3O7s&pp=ygULcmFzaGVkIGtoYW4%3D
+          - generic [ref=e75] [cursor=pointer]:
+            - generic [ref=e76]:
+              - heading [level=3] [ref=e78]:
+                - link "জামায়াত ও এনসিপির মধ্যে কি স্নায়ুযু\\দ্ধ চলছে? | Rashed Khan | Jamaat | NCP | Ekhon TV 5 minutes, 6 seconds" [ref=e79]:
+                  - /url: /watch?v=g0nPG2G3O7s&pp=ygULcmFzaGVkIGtoYW4%3D
+                  - text: জামায়াত ও এনসিপির মধ্যে কি স্নায়ুযু\দ্ধ চলছে? | Rashed Khan | Jamaat | NCP | Ekhon TV
+              - generic [ref=e82]:
+                - generic [ref=e83]: 6.5K views
+                - generic [ref=e84]: •2 days ago
+            - generic [ref=e85]:
+              - link "Go to channel EKHON TV" [ref=e86]:
+                - /url: /@ekhontv
+              - generic [ref=e87]:
+                - link "EKHON TV" [ref=e91]:
+                  - /url: /@ekhontv
+                - img "Verified" [ref=e96]
+            - generic [ref=e98]:
+              - generic [ref=e99]: "এখনটিভি #ekhontv জামায়াত ও এনসিপির মধ্যে কি স্নায়ুযু\\দ্ধ চলছে? | Rashed ..."
+              - tooltip "tooltip"
+            - img "New" [ref=e104]
+        - generic [ref=e107]:
+          - link [aria-hidden] [ref=e109] [cursor=pointer]:
+            - /url: /watch?v=_873hptnlyM&pp=ygULcmFzaGVkIGtoYW4%3D
+          - generic [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]:
+              - heading [level=3] [ref=e114]:
+                - link "এবার রাশেদ খাঁন ও মেঘনা আলমকে একহাত নিলেন নাসীরুদ্দীন পাটওয়ারী | Rashed Khan | Meghna Alam | ITV 4 minutes, 29 seconds" [ref=e115]:
+                  - /url: /watch?v=_873hptnlyM&pp=ygULcmFzaGVkIGtoYW4%3D
+                  - text: এবার রাশেদ খাঁন ও মেঘনা আলমকে একহাত নিলেন নাসীরুদ্দীন পাটওয়ারী | Rashed Khan | Meghna Alam | ITV
+              - generic [ref=e118]:
+                - generic [ref=e119]: 176K views
+                - generic [ref=e120]: •19 hours ago
+            - generic [ref=e121]:
+              - link "Go to channel Independent Television" [ref=e122]:
+                - /url: /@IndependentTelevision
+              - generic [ref=e123]:
+                - link "Independent Television" [ref=e127]:
+                  - /url: /@IndependentTelevision
+                - img "Verified" [ref=e132]
+            - generic [ref=e134]:
+              - text: এবার রাশেদ খাঁন ও মেঘনা আলমকে একহাত নিলেন নাসীরুদ্দীন পাটওয়ারী ...
+              - tooltip "tooltip"
+            - img "New" [ref=e139]
+        - generic [ref=e142]:
+          - link [aria-hidden] [ref=e144] [cursor=pointer]:
+            - /url: /watch?v=Qh2AVU9OUaA&pp=ygULcmFzaGVkIGtoYW4%3D
+          - generic [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]:
+              - heading [level=3] [ref=e149]:
+                - 'link "শেখ হাসিনা বারবার বাংলাদেশে ফিরে আসার হাঁকডাক পারতেছে: রাশেদ খাঁন | Rashed Khan | Sheikh Hasina 2 minutes, 23 seconds" [ref=e150]':
+                  - /url: /watch?v=Qh2AVU9OUaA&pp=ygULcmFzaGVkIGtoYW4%3D
+                  - text: "শেখ হাসিনা বারবার বাংলাদেশে ফিরে আসার হাঁকডাক পারতেছে: রাশেদ খাঁন | Rashed Khan | Sheikh Hasina"
+              - generic [ref=e153]:
+                - generic [ref=e154]: 5.3K views
+                - generic [ref=e155]: •1 day ago
+            - generic [ref=e156]:
+              - link "Go to channel Bangladesh Pratidin" [ref=e157]:
+                - /url: /@BangladeshPratidinNews
+              - generic [ref=e158]:
+                - link "Bangladesh Pratidin" [ref=e162]:
+                  - /url: /@BangladeshPratidinNews
+                - img "Verified" [ref=e167]
+            - generic [ref=e169]:
+              - text: "শেখ হাসিনা বারবার বাংলাদেশে ফিরে আসার হাঁকডাক পারতেছে: রাশেদ খাঁন ..."
+              - tooltip "tooltip"
+            - img "New" [ref=e174]
+        - generic [ref=e177]:
+          - link [aria-hidden] [ref=e179] [cursor=pointer]:
+            - /url: /watch?v=OnELvIkLY78&pp=ygULcmFzaGVkIGtoYW4%3D
+          - generic [ref=e181] [cursor=pointer]:
+            - generic [ref=e182]:
+              - heading [level=3] [ref=e184]:
+                - link "আওয়ামী লীগ নেতার গাড়িতে ‘লংড্রাইভ করেছেন’ পাটওয়ারী, দাবি রাশেদ খাঁনের | Rashed Khan | Ittefaq 1 minute, 37 seconds" [ref=e185]:
+                  - /url: /watch?v=OnELvIkLY78&pp=ygULcmFzaGVkIGtoYW4%3D
+                  - text: আওয়ামী লীগ নেতার গাড়িতে ‘লংড্রাইভ করেছেন’ পাটওয়ারী, দাবি রাশেদ খাঁনের | Rashed Khan | Ittefaq
+              - generic [ref=e188]:
+                - generic [ref=e189]: 20K views
+                - generic [ref=e190]: •11 days ago
+            - generic [ref=e191]:
+              - link "Go to channel Daily Ittefaq" [ref=e192]:
+                - /url: /@DailyIttefaqDigital
+              - generic [ref=e193]:
+                - link "Daily Ittefaq" [ref=e197]:
+                  - /url: /@DailyIttefaqDigital
+                - img "Verified" [ref=e202]
+            - generic [ref=e204]:
+              - text: "ittefaqNew #Dailyittefaq #Todaynews #bdpoliticalnews আওয়ামী লীগ নেতার গাড়িতে 'লংড্রাইভ ..."
+              - tooltip "tooltip"
+        - generic [ref=e206]:
+          - link [aria-hidden] [ref=e208] [cursor=pointer]:
+            - /url: /shorts/EUMhPnKt8co
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]:
+              - heading [level=3] [ref=e213]:
+                - 'link "রংপুর মেডিকেলে কোনো সিন্ডিকেটের দৌরাত্ম্য থাকবে না: রাশেদ খান | Rashed Khan | NTV News by NTV News 1,424 views 4 hours ago 58 seconds - play Short" [ref=e214]':
+                  - /url: /shorts/EUMhPnKt8co
+                  - text: "রংপুর মেডিকেলে কোনো সিন্ডিকেটের দৌরাত্ম্য থাকবে না: রাশেদ খান | Rashed Khan | NTV News"
+              - generic [ref=e217]:
+                - generic [ref=e218]: 1.4K views
+                - generic [ref=e219]: •4 hours ago
+            - generic [ref=e220]:
+              - link "Go to channel NTV News" [ref=e221]:
+                - /url: /@NTVlatestnews
+              - generic [ref=e222]:
+                - link "NTV News" [ref=e226]:
+                  - /url: /@NTVlatestnews
+                - img "Verified" [ref=e231]
+            - generic [ref=e233]:
+              - text: চিকিৎসাখাতের উন্নয়ন নিয়ে অতীতের সরকারগুলোর ভূমিকা নিয়ে ...
+              - tooltip "tooltip"
+            - img "New" [ref=e238]
+        - generic [ref=e241]:
+          - link [aria-hidden] [ref=e243] [cursor=pointer]:
+            - /url: /shorts/KXP3ZQ2FnVo
+          - generic [ref=e245] [cursor=pointer]:
+            - generic [ref=e246]:
+              - heading [level=3] [ref=e248]:
+                - 'link "Jamaat does not respect women: Rashed Khan #banglatalk #talkshow #banglatv by Bangla TV 345 views 4 hours ago 56 seconds - play Short" [ref=e249]':
+                  - /url: /shorts/KXP3ZQ2FnVo
+                  - text: "Jamaat does not respect women: Rashed Khan #banglatalk #talkshow #banglatv"
+              - generic [ref=e252]:
+                - generic [ref=e253]: 345 views
+                - generic [ref=e254]: •4 hours ago
+            - generic [ref=e255]:
+              - link "Go to channel Bangla TV" [ref=e256]:
+                - /url: /@BanglaTvLtd
+              - generic [ref=e257]:
+                - link "Bangla TV" [ref=e261]:
+                  - /url: /@BanglaTvLtd
+                - img "Verified" [ref=e266]
+            - generic [ref=e268]:
+              - text: "জামায়াত নারীদের সম্মান করে না: রাশেদ খাঁন #banglatalk #talkshow #banglatv #banglatalkshow #talkshow #banglatv ..."
+              - tooltip "tooltip"
+            - img "New" [ref=e273]

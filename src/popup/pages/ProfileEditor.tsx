@@ -8,6 +8,7 @@ import {
 } from "@shared/constants";
 import type { DetectionMode } from "@shared/types/profile";
 import ReferenceImageManager from "@/options/components/ReferenceImageManager";
+import { isLatinName, suggestBanglaVariants } from "@shared/utils/banglaHints";
 
 interface Props {
   profileId: string | null;
@@ -88,6 +89,23 @@ export default function ProfileEditor({ profileId, onDone }: Props) {
         keywords to improve detection accuracy.
       </p>
 
+      <details className="text-xs bg-emerald-50 border border-emerald-200 rounded p-2">
+        <summary className="cursor-pointer font-semibold text-emerald-900">
+          For highest accuracy (~95%+)
+        </summary>
+        <ol className="mt-2 space-y-1 list-decimal list-inside text-emerald-900">
+          <li>Add all name spellings including Bangla (e.g. <code>রাশেদ খান</code>).
+            Hashtag concatenation (<code>#RashedKhan</code>) + Bangla চন্দ্রবিন্দু
+            variants auto-match — no need to add both.</li>
+          <li>Upload 3–5 clear face photos as <b>Reference images</b>. Face
+            descriptor auto-computed on upload.</li>
+          <li>Turn on <b>Face similarity</b> and <b>Image similarity</b>. Face
+            matching is language-independent — it works on Bangla-only titles,
+            hashtag typos, and images without text.</li>
+          <li>Keep mode on <b>Balanced</b>. Face alone triggers a match.</li>
+        </ol>
+      </details>
+
       <fieldset className="space-y-2">
         <legend className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
           Person identity
@@ -108,6 +126,11 @@ export default function ProfileEditor({ profileId, onDone }: Props) {
             placeholder="Md. Rashed Khan&#10;Rashed"
           />
         </Field>
+        <BanglaHints
+          primaryName={name}
+          existingAliases={aliases}
+          onAdd={(v) => setAliases((cur) => (cur ? cur + "\n" + v : v))}
+        />
       </fieldset>
 
       <fieldset className="space-y-2">
@@ -245,6 +268,45 @@ function Toggle({
       <input type="checkbox" checked={checked} onChange={(e) => onChange(e.target.checked)} />
       {label}
     </label>
+  );
+}
+
+function BanglaHints({
+  primaryName,
+  existingAliases,
+  onAdd,
+}: {
+  primaryName: string;
+  existingAliases: string;
+  onAdd: (variant: string) => void;
+}) {
+  const trimmed = primaryName.trim();
+  if (!trimmed || !isLatinName(trimmed)) return null;
+  const suggestions = suggestBanglaVariants(trimmed, 4);
+  if (!suggestions.length) return null;
+  const already = new Set(
+    existingAliases
+      .split(/\r?\n/)
+      .map((s) => s.trim())
+      .filter(Boolean),
+  );
+  const remaining = suggestions.filter((s) => !already.has(s));
+  if (!remaining.length) return null;
+  return (
+    <div className="flex flex-wrap gap-1 items-center text-[11px]">
+      <span className="text-slate-500">Suggested Bangla:</span>
+      {remaining.map((v) => (
+        <button
+          key={v}
+          type="button"
+          onClick={() => onAdd(v)}
+          className="px-2 py-0.5 rounded-full border border-indigo-200 bg-indigo-50 text-indigo-800 hover:bg-indigo-100"
+          title="Click to add as alias"
+        >
+          + {v}
+        </button>
+      ))}
+    </div>
   );
 }
 

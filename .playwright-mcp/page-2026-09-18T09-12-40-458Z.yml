@@ -1,0 +1,78 @@
+- generic [ref=f4e5]:
+  - banner:
+    - generic [ref=f4e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f4e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f4e16]:
+      - generic [ref=f4e17]:
+        - generic:
+          - generic:
+            - generic:
+              - button [aria-hidden]
+      - combobox "Search Facebook" [ref=f4e20]: rashed khan
+    - navigation "Facebook" [ref=f4e24]:
+      - list [ref=f4e25]:
+        - listitem [ref=f4e26]:
+          - link "Home" [ref=f4e29] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f4e33]:
+          - link "Reels" [ref=f4e36] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f4e41]:
+          - link "Marketplace" [ref=f4e44] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f4e48]:
+          - link "Groups" [ref=f4e51] [cursor=pointer]:
+            - /url: /groups/
+        - listitem [ref=f4e55]:
+          - link "Gaming" [ref=f4e58] [cursor=pointer]:
+            - /url: /gaming/play/?store_visit_source=gaming_tab
+    - navigation "Account Controls and Settings" [ref=f4e64]:
+      - button "Facebook menu" [ref=f4e69] [cursor=pointer]
+      - button "Messenger" [ref=f4e76] [cursor=pointer]
+      - generic [ref=f4e82]:
+        - button "Notifications, 6 unread" [ref=f4e83] [cursor=pointer]
+        - button [aria-hidden] [ref=f4e86] [cursor=pointer]:
+          - generic [ref=f4e87]:
+            - generic [ref=f4e88]: Number of unread notifications
+            - generic [aria-hidden] [ref=f4e89]: "6"
+      - button "Your profile" [ref=f4e92] [cursor=pointer]:
+        - img "Your profile" [ref=f4e94]
+  - generic [ref=f4e108]:
+    - region "Result filters" [ref=f4e109]:
+      - generic [ref=f4e110]:
+        - heading "Search results" [level=1] [ref=f4e118]
+        - generic [ref=f4e123]:
+          - heading "Filters" [level=2] [ref=f4e137]
+          - list [ref=f4e141]:
+            - listitem [ref=f4e142]:
+              - link "All" [ref=f4e144] [cursor=pointer]:
+                - /url: /search/top/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+            - listitem [ref=f4e158]:
+              - link "People" [ref=f4e160] [cursor=pointer]:
+                - /url: /search/people/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+            - listitem [ref=f4e172]:
+              - link "Reels results" [ref=f4e174] [cursor=pointer]:
+                - /url: /search/videos/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+                - generic [ref=f4e175]: Reels
+            - listitem [ref=f4e186]:
+              - link "Marketplace results" [ref=f4e188] [cursor=pointer]:
+                - /url: /marketplace/search/?query=rashed%20khan
+                - generic [ref=f4e189]: Marketplace
+            - listitem [ref=f4e200]:
+              - link "Pages" [ref=f4e202] [cursor=pointer]:
+                - /url: /search/pages/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+            - listitem [ref=f4e214]:
+              - link "Groups results" [ref=f4e216] [cursor=pointer]:
+                - /url: /search/groups/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+                - generic [ref=f4e217]: Groups
+            - listitem [ref=f4e228]:
+              - link "Events" [ref=f4e230] [cursor=pointer]:
+                - /url: /search/events/?q=rashed%20khan&__rsidv2__=bf94dea1-0f9c-467f-b974-ec818383ad41&__epa__=SERP_TAB&__eps__=SERP_POSTS_TAB
+    - main "Search results" [ref=f4e242]:
+      - feed [ref=f4e247]:
+        - article [ref=f4e253]:
+          - status "Loading..." [ref=f4e255]

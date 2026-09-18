@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { normalize, wordBoundaryRegex } from "./normalize";
+import { nameVariants, normalize, stripBanglaVariations, wordBoundaryRegex } from "./normalize";
 
 describe("normalize", () => {
   it("lowercases and strips punctuation", () => {
@@ -32,5 +32,65 @@ describe("wordBoundaryRegex", () => {
   });
   it("matches at end", () => {
     expect(rx.test(normalize("about trump"))).toBe(true);
+  });
+});
+
+describe("stripBanglaVariations", () => {
+  it("removes chandrabindu (ঁ)", () => {
+    expect(stripBanglaVariations("খাঁন")).toBe("খান");
+  });
+  it("removes anusvara (ং)", () => {
+    expect(stripBanglaVariations("বাংলা")).toBe("বালা");
+  });
+  it("leaves plain text unchanged", () => {
+    expect(stripBanglaVariations("rashed khan")).toBe("rashed khan");
+  });
+});
+
+describe("nameVariants", () => {
+  it("includes concatenated form for multi-word English name", () => {
+    const v = nameVariants("Rashed Khan");
+    expect(v).toContain("rashed khan");
+    expect(v).toContain("rashedkhan");
+  });
+  it("includes Bangla stripped form when name has chandrabindu", () => {
+    const v = nameVariants("রাশেদ খাঁন");
+    expect(v).toContain("রাশেদ খাঁন");
+    expect(v).toContain("রাশেদ খান");
+    expect(v).toContain("রাশেদখাঁন");
+    expect(v).toContain("রাশেদখান");
+  });
+  it("single-word name yields one variant", () => {
+    expect(nameVariants("Elon")).toEqual(["elon"]);
+  });
+  it("empty in → empty out", () => {
+    expect(nameVariants("")).toEqual([]);
+  });
+});
+
+describe("hashtag / Bangla-variant matching via wordBoundaryRegex + nameVariants", () => {
+  const hasAny = (hay: string, term: string) => {
+    const normHay = normalize(hay);
+    const stripped = stripBanglaVariations(normHay);
+    return nameVariants(term).some((v) => {
+      const re = wordBoundaryRegex(v);
+      return re.test(normHay) || (stripped !== normHay && re.test(stripped));
+    });
+  };
+
+  it("matches hashtag concat: '#RashedKhan' vs 'Rashed Khan'", () => {
+    expect(hasAny("#RashedKhan tonight", "Rashed Khan")).toBe(true);
+  });
+  it("matches bare concat: 'RashedKhan' vs 'Rashed Khan'", () => {
+    expect(hasAny("RashedKhan won", "Rashed Khan")).toBe(true);
+  });
+  it("matches chandrabindu variant: 'রাশেদ খাঁন' vs 'রাশেদ খান'", () => {
+    expect(hasAny("আজ রাশেদ খাঁন বললেন", "রাশেদ খান")).toBe(true);
+  });
+  it("matches reverse: needle has chandrabindu, hay doesn't", () => {
+    expect(hasAny("রাশেদ খান বললেন", "রাশেদ খাঁন")).toBe(true);
+  });
+  it("no false positive: 'trumpet' vs 'trump'", () => {
+    expect(hasAny("trumpet festival", "trump")).toBe(false);
   });
 });

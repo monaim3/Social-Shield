@@ -11,6 +11,11 @@ export const FB_POST_SELECTORS: readonly string[] = [
   '[data-pagelet^="ReelViewer"]',
   // Legacy video cards
   'div[data-testid="post_container"]',
+  // Search results 2026 shape: message div is the anchor. Hiding this
+  // collapses the caption/text; author + reactions remain visible but empty.
+  // Better than nothing while FB obfuscates outer wrappers.
+  'div[data-ad-preview="message"]',
+  'div[data-ad-comet-preview="message"]',
 ];
 
 // Elements to skip while extracting text to reduce noise.

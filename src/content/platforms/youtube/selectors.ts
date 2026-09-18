@@ -14,6 +14,13 @@ export const YT_POST_SELECTORS: readonly string[] = [
   "ytd-reel-video-renderer",                     // fullscreen shorts player card
   "ytd-shelf-renderer",                          // topic shelves
   "ytd-radio-renderer",                          // playlists / mixes in search
+  // Shorts opened as detail page (URL /shorts/{id})
+  "ytd-shorts",
+  "yt-shorts-player-video-view-model",
+  "ytd-reel-video-in-sequence-renderer",
+  // Individual short cell inside a reel shelf (do NOT match the outer shelf
+  // itself — one matching short would collapse the entire shelf).
+  "ytm-shorts-video-cell",
 ];
 
 export const YT_TEXT_SKIP_SELECTORS: readonly string[] = [
